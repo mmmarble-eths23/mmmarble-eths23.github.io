@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SIGCSE Elitism</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+            body{
+                width: 9in ;
+                margin: auto;
+            }
+            .dark-mode{
+                background-color: #1e1e2f;
+                color: ghostwhite;
+            }
+        </style>
+        <script type="text/javascript">
+            function toggleMode(){
+                document.body.classList.toggle('dark-mode');
+            }
+            function draw()
+            {
+                const canvas = document.getElementById("canvas");
+                const ctx = canvas.getContext("2d");
+                ctx.beginPath();
+                ctx.moveTo(75, 50);
+                ctx.lineTo(100, 75);
+                ctx.lineTo(100, 25);
+                ctx.fillStyle = "Red";
+                ctx.fill();
+                ctx.closePath();
+
+                ctx.beginPath();
+                ctx.moveTo(50, 75);
+                ctx.lineTo(75, 100);
+                ctx.lineTo(25, 100);
+                ctx.closePath();
+                ctx.stroke();
+            
+
+            }
+        </script>
+    </head>
+    <body onload="draw();">
+        <div style="width: 8.5in;">
+            <div>
+                <h1>SIGCSE and Institutional Elitism</h1>
+                <p><b>“When Are We Gonna Have a Serious Conversation About How Unserious (and Problematic) SIGCSE Is?” by Dr. Nicki Washington 
+                    is an in depth exploration of the institutional barriers faced by people of color in academia, and how these barriers are maintained.</b>
+                   
+                </p>
+                <p>During the segment on panelist and presenter considerations, Dr. Washington responds to the criticism given by one of the reviewers that because 
+                    “some panelists are not a full-time tenure track faculty, it is a bit difficult to assess their technical depth,” lambasting the idea that, 
+                    regardless of a person’s experience with the topic at hand, in order for their input to hold validity, it must be supported by either having a 
+                    Ph.D. or their position as full-time, tenure track faculty. Dr.Washington further highlights this disparity between what people are and are not 
+                    considered having adequate “technical depth,” pointing out that in a discussion about K-16 CS education, an actual K-12 educator, a Ph.D. student 
+                    on track to become faculty, and the non-tenure track faculty who teach more courses per academic year than their tenure track counterparts are 
+                    clearly more than qualified to offer their input on this topic. This is especially egregious considering the proposal being focused on was 
+                    entirely non-technical in nature, negating the most obvious benefits the perspective of someone who held either a  Ph.D. or a tenure track 
+                    position could bring to the topic.
+                </p>
+                <ul>
+                    <li>
+                        What advantages could people with these backgrounds have over tenure track faculty in terms of adequately addressing the topic at hand? 
+                    </li>
+                    <li>
+                        What are some specific advantages having a Ph.D. could provide in this scenario?
+                    </li>
+                </ul>
+                <p>Dr. Washington mentions at the beginning of the article that despite her criticism of the current peer-review process for SIGCSE, she is absolutely in 
+                    support of peer-review as a concept, mentioning that “we see every day in this country what happens when people are surrounded by echo chambers.” 
+                </p>
+                <ul>
+                    <li>
+                        What are some parallels that can be drawn between the construction of “echo chambers” and the structural elitism barring the entry and 
+                        input of diverse voices in academia? </li>
+                    <li>
+                        In what ways are the ramifications of the lack of diversity in academia apparent in the content of the anonymous reviewer’s criticism?
+                    </li>
+                </ul>
+                <p>
+                    The steps taken to limit change to this status quo is exemplified when Dr. Washington reveals that a separate proposal she submitted was accepted 
+                    despite not only there being minimal differences in the presentation between the two, but the rejected proposal on identity and identity-inclusive 
+                    computing going above and beyond what was asked for, especially compared to her other proposal. This contrast highlights how the core issue of the 
+                    rejected proposal is not just that it was submitted by a woman of color who is, moreover, not full-time tenure track faculty, but that it criticizes 
+                    the institution currently in place.
+                </p>
+                <ul>
+                    <li>
+                        In what ways does this relate to Dr. Washington’s claim that “[a]s always, the CS education community (especially SIGCSE) relies on people not 
+                        going against the grain and accepting things with quiet rage that never discomforts anyone?” 
+                    </li>
+                </ul>
+                <div style="text-align: center;">
+                    <button onclick="toggleMode()" style="margin-left:auto;margin-right: auto;">Toggle Mode</button>
+                </div>
+                    
+            </div>
+        </div>
+        <canvas id="canvas" width="200" height="200"></canvas>
+
+        
+    </body>
+</html>
